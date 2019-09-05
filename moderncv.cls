@@ -44,7 +44,7 @@
   \setlength\paperheight{\paperwidth}
   \setlength\paperwidth{\@tempdima}}
 
-% font size options
+%  size options
 \newcommand\@ptsize{}
 \DeclareOption{10pt}{\renewcommand\@ptsize{0}}
 \DeclareOption{11pt}{\renewcommand\@ptsize{1}}
@@ -191,7 +191,8 @@
 % compatibility package with older versions of moderncv
 \RequirePackageWithOptions{moderncvcompatibility}
 
-\RequirePackage{l3regex}
+\usepackage{expl3}
+\expandafter\def\csname ver@l3regex.sty\endcsname{}
 
 %-------------------------------------------------------------------------------
 %                class definition

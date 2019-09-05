@@ -1,0 +1,187 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+%\renewcommand{\rmdefault}{ptm}
+\documentclass[12pt,letterpaper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\renewcommand{\familydefault}{\rmdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Matthew}{Peverill}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{University of Washington; Box 351525}{Seattle, WA 98195}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+1~(857)~277~9083}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{mrpeverill@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.matthewpeverill.com}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+%\social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+%\social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{mrpeverill}                              % optional, remove / comment the line if not wanted
+%\social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+%\social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
+
+% this is how you add multiple degrees/jobs for an institution. https://tex.stackexchange.com/questions/294597/modercv-banking-one-university-multiple-degrees
+\newcommand*{\cvsimple}[4][.25em]{
+	\begin{tabular*}{\maincolumnwidth}{l@{\extracolsep{\fill}}r}%
+		% {\bfseries #4} & {\bfseries #5}\\%
+		{\itshape #3} & {\itshape #2}\\%
+	\end{tabular*}%
+	\ifx&#4&%
+	\else{\\%
+		\begin{minipage}{\maincolumnwidth}%
+			\small#4%
+		\end{minipage}}\fi%
+		\par\addvspace{#1}}
+\makeatother
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry[0em]{In Progress}{Ph.D.}{University of Washington}{Seattle, WA}{\textit{Psychology}}{}  % arguments 3 to 6 can be left empty
+\cvsimple{2017}{M.S., Psychology}{}
+\cventry{2007}{B.A.}{Amherst College}{Amherst, MA}{\textit{Psychology}}{}
+
+\section{Master thesis}
+\cvitem]{title}{\emph{Title}}
+\cvitem{supervisors}{Supervisors}
+\cvitem{description}{Short thesis abstract}
+
+\section{Research Experience}
+\cventry{2014--Present}{Graduate Research Assistant}{Stress and Development Laboratory}{Seattle, WA}{}{As a graduate student in the Stress and Development Lab, I have played a key role in many of our studies from data collection through analysis. My responsibilities include:}{
+\begin{itemize}
+\item Pre-processing and analysis of fMRI data.
+\item Conducting clinical and life stress interviews of our research participants, children 8-17 with and without histories of physical and sexual abuse as well as their parents.
+\item Conducting safety assessments and appropriate follow-up with participants who endorsed suicidality and/or abuse.
+\item Training research assistants in interviewing and safety assessment.
+\item Mentoring research staff and honors students through early career research projects. 
+\item Supervising the lab's structural MRI quality control process.
+\end{itemize}}
+
+\cventry{2013--2014}{Research Coordinator}{Sheridan Laboratory, Children's Hospital Boston}{Boston, MA}{}{Developed data analysis methods and coordinated fMRI data collection with 5-7 year old children with hyperactivity. Coordinated subject recruitment and lab administration. Quality control and editing of structural MRI data}
+
+\cventry{2012--2013}{Volunteer Research Assistant}{Stress and Development Laboratory, Boston Children's Hospital}{Boston, MA}{}{Assisted MRI data collection. Developed data analysis scripts`}
+
+\section{Clinical Experience}
+\cventry{2017-2019}{Staff Therapist}{UW Parent Child Clinic}{Seattle, WA}{}{Administered an evidence based treatment for disruptive behavior disorders to parents of school aged children and adolescents. Maintained a case load of two clients.}
+
+\cventry{2017-2018}{Coach}{The Seattle Clinic PEERS Teen Group}{Seattle, WA}{}{Assisted administration of two manualized and evidence based social skills training groups for adolescents. Provided personalized treatment and goal setting through check-ins and check-outs. Performed role-plays to model skills. Managed participant behavior in the group}
+
+\cventry{2016-2017}{Student Therapist}{Seattle Children's Hospital Neuropsychological Testing Consult Service}{Seattle, WA}{}{Administered standardized measures of cognitive performance, academic readiness, memory, vocabulary, and motor skills to children in a hospital setting. Conducted intake interviews, test list formation, report writing, and feedback sessions for patients recovering from medical illness.}
+
+\section{Clinical Workshops and Intensive Trainings}
+\cventry{2017}{Laurie Zoellner}{Prolonged Exposure for PTSD}{}{}{}
+\cventry{2016}{Corey Fagan}{CBT for Depression}{}{}{CBT for depression; Mindfulness based CBT; Behavioral Activation}
+\cventry{2016}{Marsha Linehan}{Suicide Workshop}{}{}{}
+\cventry{2016}{Shannon Dorsey}{Trauma Focused CBT}{}{}{}
+\cventry{2016}{Kathryn Korslund and Melanie Harned}{DBT Skills}{}{}{}
+%Breiger Intelligence ClassError
+%King Assesment class
+%Intro to DBT?
+
+\section{Teaching Experience}
+\cventry{Winter, Spring 2019}{Teaching Assistant}{Psych 220: Biopsychology.}{University of Washington}{}{}
+\cventry{Fall 2016}{Teaching Assistant}{Psych 345: Social Psychology.}{University of Washington}{}{}
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+  \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+  \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+\end{cvcolumns}
+
+\section{Awards}
+	\cvitem{2019}{Flux Congress}{Graduate Student Travel Award}{}{}{}
+	\cvitem{2019}{Society for Research in Child Development}{Graduate Student Travel Award}{}{}{}
+	\cvitem{2019}{UW Department of Psychology}{Robert C. Bolles Graduate Fellowship}{}{}{}
+	\cvitem{2019}{UW College of Arts and Sciences}{Arts & Sciences Natural Science Fellowship}{}{}{}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{Journal Articles}
+\begin{enumerate}
+	\item Lambert, H.K., Weissman, D.G., Rodman, A.M., \textbf{Peverill, M.}, Sheridan, M.A., \& McLaughlin, K.A. (2019, August). Reduced hippocampal volume after childhood violence increases risk for depression after later life stress. Poster presented at the meeting of the FLUX Congress for Integrative Developmental Cognitive Neuroscience, New York, NY.
+
+	\item \textbf{Peverill, M.}, Rosen, ML., Sambrook, KA., Sheridan, MA., McLaughlin, KA. (2019) Differential Associations of early threat and deprivation with brain structure. Poster presented at the meeting of the FLUX Congress for Integrative Developmental Cognitive Neuroscience, New York, NY.
+
+	\item Lambert, Hilary K., \textbf{Peverill, M.}, Sambrook, Kelly A., Rosen, M.L., Sheridan, Margaret A., McLaughlin, Katie A. (2019) Altered Development of Hippocampus-Dependent Associative Learning following Early-Life Adversity. Poster presented at the meeting of the Society of Research in Child Development, Baltimore, MD.
+
+	\item \textbf{Peverill, M.} Rosen, M.L., Sambrook, Kelly A., Sheridan, Margaret A., McLaughlin, Katie A. (2019) Differential association of early experiences of threat and deprivation with cortical thickness. In D. G. Weissman (Chair), Beyond stress: Identifying specific pathways between childhood and adolescent risk factors and mental health. Symposium conducted at the meeting of the Society of Research in Child Development, Baltimore, MD.
+
+	\item \textbf{Peverill, M.}, Sheridan, M., McLaughlin, K. (2016) Child Maltreatment and Emotion Regulation Networks. Poster presented at the conference ‘Early Experience and Sensitive Periods in Development’, Erice, Sicily, September, 2016.
+
+	\item Gold, A. L., Sheridan, M. A., \textbf{Peverill, M.}, Busso, D. S., Lambert, H. K., Alves, S., Pine, D. S., \& McLaughlin, K. A. (2016, May). Childhood maltreatment and reduced cortical thickness in adolescence. Poster presented at the Society of Biological Psychiatry Annual Meeting, Atlanta, GA.
+
+	\item \textbf{Peverill, M.}, Finn, A., McLaughlin, K., Sheridan, M. (2016) Working Memory Filtering Continues to Develop in to Late Adolescence. Poster presented at the annual meeting of the Association of Psychological Science, Chicago, IL, May, 2016. 
+
+	\item Lambert, H.K., Gold, A.L., \textbf{Peverill, M.}, Sheridan, M.A., \& McLaughlin, K.A. (2015, November). Child maltreatment, neural structure, and psychopathology in adolescence. Poster presented at the International Society for Traumatic Stress Studies Annual Meeting, New Orleans, LA.
+
+	\item Gold, A.L., Sheridan, M.A., \textbf{Peverill, M.}, Busso, D.S., Lambert, H.K., Alves, S., Pine, D.S., \& McLaughlin, K.A. (2015, October). Childhood maltreatment and reduced cortical thickness in brain regions involved in emotional processing. Poster presented at the Developmental Affective Neuroscience Symposium, Pittsburgh, PA.
+
+	\item \textbf{Peverill, M.}, Finn, A., McLaughlin, K., Sheridan, M. (2014) Prefrontal Cortex Recruitment During Working Memory Filtering in Adolescents and Adults. Poster presented at the annual meeting of the Cognitive Neuroscience Society, Boston, MA, April, 2014.
+
+\end{enumerate}
+
+
+\section{Book Chapters}
+
+\section{Selected Conference Presentations}
+
+\section{Selected Community Service}
+	\cvitem{}
+
+\end{document}
+
+
+%% end of file `template.tex'.

@@ -1,16 +1,1 @@
-#moderncv: a modern curriculum vitae class#
-
-**Moderncv** provides a documentclass for typesetting curricula vitae in various
-styles. Moderncv aims to be both straightforward to use and customizable,
-providing five ready-made styles (classic, casual, banking, oldstyle and fancy)
-and allowing one to define his own by modifying colors, fonts, icons, etc.
-
-Most commands are defined in such a way that arguments are optional.
-
-Until a decent manual is written, one can always look in the "examples"
-directory for some examples. Documents can be compiled into dvi, ps or pdf.
-
-
-Author: Xavier Danaux <xdanaux@gmail.com><br/>
-Licence: The LaTeX Project Public Li­cense, version 1.3c<br/>
-URL: https://github.com/xdanaux/moderncv
+This was a stab at creating a resume in LaTeX using moderncv. My advice is not to do this unless you know a lot about LaTeX already. I found that some sections were not formatted that well because I didn't want to make a custom record type for each sort of entry. Also, I drew up short in making a references list with my name bolded, in APA style, with reverse numbered references.

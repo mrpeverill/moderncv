@@ -1,0 +1,22 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[1] Config.pm:307> INFO - Logfile is 'mrpeverill-cv.blg'
+[42] biber-MSWIN64:315> INFO - === 
+[72] Biber.pm:375> INFO - Reading 'mrpeverill-cv.bcf'
+[209] Biber.pm:902> INFO - Using all citekeys in bib section 0
+[231] Biber.pm:4196> INFO - Processing section 0
+[234] Utils.pm:75> INFO - Globbing data source 'mypubs.bib'
+[246] Utils.pm:91> INFO - Globbed data source 'mypubs.bib' to mypubs.bib
+[246] Utils.pm:75> INFO - Globbing data source 'biblatex-examples.bib'
+[246] Utils.pm:91> INFO - Globbed data source 'biblatex-examples.bib' to biblatex-examples.bib
+[264] Biber.pm:4373> INFO - Looking for bibtex format file 'mypubs.bib' for section 0
+[276] bibtex.pm:1462> INFO - LaTeX decoding ...
+[371] bibtex.pm:1281> INFO - Found BibTeX data source 'mypubs.bib'
+[1041] Biber.pm:4373> INFO - Looking for bibtex format file 'biblatex-examples.bib' for section 0
+[1311] bibtex.pm:1462> INFO - LaTeX decoding ...
+[1576] bibtex.pm:1281> INFO - Found BibTeX data source 'C:/Program Files/MiKTeX 2.9/bibtex/bib/biblatex/biblatex-examples.bib'
+[2521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2521] Biber.pm:4024> INFO - Sorting list 'ydnt/global//global/global' of type 'entry' with template 'ydnt' and locale 'en-US'
+[2521] Biber.pm:4030> INFO - No sort tailoring available for locale 'en-US'
+[2714] bbl.pm:648> INFO - Writing 'mrpeverill-cv.bbl' with encoding 'UTF-8'
+[3069] bbl.pm:751> INFO - Output to mrpeverill-cv.bbl
